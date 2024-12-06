@@ -1,0 +1,6 @@
+<ng-container *ngIf="jobs?.length; else noJob">
+  <app-job-list [jobs]="jobs" [selection]="false" [isFavTab]="true"></app-job-list>
+</ng-container>
+<ng-template #noJob>
+ <p>No favorite jobs</p>
+</ng-template>
